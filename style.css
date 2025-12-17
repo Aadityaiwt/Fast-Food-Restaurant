@@ -1,0 +1,728 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+                                   /* Nav Section */
+
+.container-fluid{
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+}
+
+.navbar-brand:hover {
+  color: #e69c00 !important;
+}
+
+.nav-link:hover {
+    color: #e69c00 !important;
+
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Optional hover effect */
+.navbar-toggler:hover .navbar-toggler-icon {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+                                  /* Hero Section */
+
+.hero {
+  width: 100%;
+  height: 760px;
+  background: url(Images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.my-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide h1,
+.swiper-slide p {
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+
+.swiper-slide h1 {
+  margin: 100px 0 0 150px;
+}
+
+.swiper-slide p {
+  margin: 20px 0 0 150px;
+}
+
+.swiper-slide .swiper-btn button {
+  margin: 20px 0 0 150px;
+}
+
+.swiper-btn button {
+  height: 45px;
+  width: 160px;
+  font-size: 18px;
+  color: white;
+  border-radius: 30px;
+  background-color: #ffbe33;
+  transition: all 0.2s ease-in;
+}
+
+.swiper-btn button:hover {
+  background-color: #e69c00;
+}
+                                       /* Food Section */
+.my-container {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  height: 200px;
+  width: 400px;
+  background-color: #222831;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid #ffbe33;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover img {
+  transform: scale(1.15);
+}
+
+.text button {
+  height: 50px;
+  width: 150px;
+  background-color: #ffbe33;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.text button:hover {
+  background-color: #e69c00;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button i {
+  color: white;
+  font-size: 20px;
+}
+
+.text h5,
+.text span {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: white;
+}
+
+.menu-container h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.menu-list li {
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.menu-list ul {
+  list-style: none;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.menu-list li {
+  cursor: pointer;
+  padding: 10px 26px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: #000;
+}
+
+.menu-list li:hover {
+  background-color: #ffbe33;
+  color: #fff;
+}
+
+.food-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.f1 {
+  height: 450px;
+  width: 370px;
+  background-color: #222831;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.box1 {
+  width: auto;
+  height: 50%;
+  background-color: #f1f2f3;
+  border-bottom-left-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.box2 {
+  width: 100%;
+  height: 50%;
+  background-color: #222831;
+}
+
+.box1 img {
+  height: 150px;
+  width: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box1:hover img {
+  transform: scale(1.15);
+}
+
+.box2 h5 {
+  font-size: 25px;
+  color: #ffbe33;
+  padding: 20px 0 0 20px;
+}
+
+.box2 p {
+  font-size: 18px;
+  color: white;
+  padding: 0 0 0 20px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+
+.price span {
+  color: #ffbe33;
+  margin: 0;
+}
+
+.price button {
+  height: 50px;
+  width: 50px;
+  background-color: #ffbe33;
+  border-radius: 50%;
+  color: white;
+}
+
+.view-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.view-more button {
+  height: 50px;
+  width: 200px;
+  background-color: #ffbe33;
+  color: white;
+  border-radius: 25px;
+  margin: 0 auto;
+  border: none;
+  margin-left: 0 auto;
+  transition: all 0.2s ease-in;
+}
+
+.view-more button:hover {
+  background-color: #e69c00;
+}
+                                         /* About Section */
+.about {
+  width: 100%;
+  height: 800px;
+  background-color: #222831;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.about .about-img img {
+  height: 100%;
+  width: 450px;
+}
+
+.about-info h1 {
+  color: #ffbe33;
+  font-family: "Dancing Script", cursive;
+}
+
+.about-info p {
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+
+.about-info button {
+  height: 50px;
+  width: 200px;
+  background-color: #ffbe33;
+  color: white;
+  border-radius: 25px;
+  transition: all 0.2s ease-in;
+}
+
+.about-info button:hover {
+  background-color: #e69c00;
+}
+                                    /* Contact Section */
+.contact-map {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact {
+  height: 400px;
+  width: 700px;
+}
+
+.contact h2 {
+  margin-left: 40px;
+  font-family: "Dancing Script", cursive;
+}
+
+.contact li {
+  list-style: none;
+}
+
+.contact li input {
+  height: 50px;
+  width: 600px;
+  margin: 10px;
+  padding: 15px;
+  color: black;
+  font-weight: 500;
+}
+
+.contact li select {
+  height: 50px;
+  width: 600px;
+  margin: 10px;
+}
+
+.contact .maps {
+  height: 100%;
+  width: 100%;
+}
+
+.book-now {
+  height: 50px;
+  width: 200px;
+  background-color: #ffbe33;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  position: relative;
+  bottom: 60px;
+  left: 90px;
+  transition: all 0.2s ease-in;
+}
+
+.book-now:hover {
+  background-color: #e69c00;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feedback-card {
+  height: 250px;
+  width: 400px;
+  background-color: #222831;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.feedback-text h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: #ffbe33;
+  padding: 10px;
+}
+
+.feedback-text p {
+  font-family: "Dancing Script", cursive;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+}
+                                   /* Footer Section */
+.footer .inner-footer {
+  height: 400px;
+  width: auto;
+  background-color: #222831;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-us {
+  height: 300px;
+  width: 300px;
+}
+
+.contact-us h6 {
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  padding: 30px;
+  color: #ffbe33;
+}
+
+.contact-us p {
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  padding: 0 0 20px 30px;
+  color: white;
+}
+
+.developer {
+  height: 100px;
+  width: 100%;
+  background-color: #222831;
+}
+
+.developer p {
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  color: #ffbe33;
+  text-align: center;
+  margin: 10px;
+}
+
+                                /* responsive 480px */
+
+@media (max-width: 480px) {
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .nav-list {
+    position: absolute;
+    flex-direction: column;
+    top: 60px;
+    right: 0;
+    gap: 20px;
+    background-color: black;
+    overflow: hidden;
+  }
+
+  .nav-links {
+    display: block;
+  }
+
+  .nav-links {
+    z-index: 999;
+  }
+
+  .nav-list li {
+    font-size: 18px;
+  }
+
+  .nav-list li a:active {
+    color: #ffbe33;
+  }
+
+  .nav-icon {
+    display: block;
+  }
+
+  .nav-list.show {
+    height: 200px;            /* menu open */
+    opacity: 1;
+    padding: 20px;
+}
+
+  .icon {
+    display: none;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .swiper-slide h1  {
+    margin: 120px 0 0 50px;
+  }
+  
+  .swiper-slide p  {
+    margin: 20px 0 0 50px;
+  }
+  
+  .swiper-btn  {
+    margin: 0 0 0 -100px;
+  }
+
+  .my-container {
+    flex-direction: column;
+  }
+
+.menu-container h1 {
+    margin-top: 50px;
+}
+
+  .food-menu {
+    grid-template-columns: repeat(1, 370px);
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about .about-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .about .about-info {
+    padding: 20px;
+  }
+  .contact-map {
+    display: block;
+  }
+  .contact-map .contact ul input {
+    width: 300px;
+  }
+
+  .contact-map .contact ul select {
+    width: 300px;
+  }
+
+  .contact-map .contact {
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book-now {
+    margin-top: 250px;
+  }
+
+  .feedback {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .feedback-text p,
+  .feedback-text h5 {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .nav-list {
+    position: absolute;
+    flex-direction: column;
+    top: 60px;
+    right: 0;
+    gap: 20px;
+    background-color: black;
+    overflow: hidden;
+  }
+
+  .nav-links {
+    display: block;
+  }
+
+  .nav-links {
+    z-index: 999;
+  }
+
+  .nav-list li {
+    font-size: 18px;
+  }
+
+  .nav-list li a:active {
+    color: #ffbe33;
+  }
+
+  .nav-icon {
+    display: block;
+  }
+
+  .nav-list.show {
+    height: 200px;            /* menu open */
+    opacity: 1;
+    padding: 20px;
+}
+
+  .icon {
+    display: none;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .swiper-slide h1  {
+    margin: 120px 0 0 50px;
+  }
+  
+  .swiper-slide p  {
+    margin: 20px 0 0 50px;
+  }
+  
+  .swiper-btn  {
+    margin: 0 0 0 -100px;
+  }
+
+  .my-container {
+    flex-direction: column;
+  }
+
+.menu-container h1 {
+    margin-top: 50px;
+}
+
+  .food-menu {
+    grid-template-columns: repeat(1, 370px);
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about .about-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .about .about-info {
+    padding: 20px;
+  }
+  .contact-map {
+    display: block;
+  }
+  .contact-map .contact ul input {
+    width: 300px;
+  }
+
+  .contact-map .contact ul select {
+    width: 300px;
+  }
+
+  .contact-map .contact {
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book-now {
+    margin-top: 250px;
+  }
+
+  .feedback {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .feedback-text p,
+  .feedback-text h5 {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
+

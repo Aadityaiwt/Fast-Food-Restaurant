@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@	2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Food</title>
+  </head> 
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark text-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light fs-1 ms-5 fw-bold" href="#">Food</a>
+          <button
+            class="navbar-toggler text-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation text-light"
+          >
+            <span class="navbar-toggler-icon pe-4"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item mx-5">
+                <a class="nav-link active text-warning fs-5" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link text-light fs-5" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link text-light fs-5" href="#about">About</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link text-light fs-5" href="#booktable">BookTable</a>
+              </li>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-warning rounded-5 px-4">
+                Order Online
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="swiper my-swiper" id="home">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <h1>Fast Food Restaurent</h1>
+              <p>
+                The restaurant offers amazing flavors, fresh ingredients, and
+                beautifully <br />
+                presented dishes. Customers appreciate the warm ambiance, polite
+                staff, and quick service. <br />
+                Every visit feels enjoyable, satisfying, and full of delicious
+                taste.
+              </p>
+              <div class="swiper-btn">
+                <button>Order Now</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h1>Fast Food Restaurent</h1>
+              <p>
+                This restaurant serves delicious, fresh, and perfectly prepared
+                food. <br />
+                Customers love the rich flavors, clean ambiance, friendly staff,
+                <br />
+                and quick service. Every meal feels satisfying, authentic,
+                <br />
+                and truly worth visiting again.
+              </p>
+              <div class="swiper-btn">
+                <button>Order Now</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h1>Fast Food Restaurent</h1>
+              <p>
+                People love this restaurant for its tasty food, generous
+                portions,
+                <br />
+                and consistent quality. Friendly service, neat environment,
+                <br />
+                and timely delivery make the experience wonderful. <br />
+                A perfect place for enjoying delicious meals anytime.
+              </p>
+              <div class="swiper-btn">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="my-container">
+          <div class="card" data-aos="fade-right">
+            <div class="image">
+              <img src="Images/o1.jpg" alt="o1" />
+            </div>
+            <div class="text">
+              <h5>Tasty Thursday</h5>
+              <span>20%</span><br />
+              <button>
+                <a href="#">Order Now</a>
+                <i class="bi bi-cart-fill"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card"   data-aos="fade-left">
+            <div class="image">
+              <img src="Images/o2.jpg" alt="o1" />
+            </div>
+            <div class="text">
+              <h5>Tasty Thursday</h5>
+              <span>20%</span><br />
+              <button>
+                <a href="#">Order Now</a>
+                <i class="bi bi-cart-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-container" id="menu">
+        <h1>Our Menu</h1>
+        <div class="menu-list">
+          <ul>
+            <li onclick="filterMenu('all')">All</li>
+            <li onclick="filterMenu('burger')">Burger</li>
+            <li onclick="filterMenu('pizza')">Pizza</li>
+            <li onclick="filterMenu('pasta')">Pasta</li>
+            <li onclick="filterMenu('fries')">Fries</li>
+          </ul>
+        </div>
+
+        <div class="food-menu">
+          <div class="f1" data-category="pizza" data-aos="fade-up">
+            <div class="box1">
+              <img src="Images/f1.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>Delicious Pizza</h5>
+              <p>
+                Freshly baked pizza topped with rich cheese, 
+                flavorful sauce, and premium ingredients for a perfect bite every time
+              </p>
+              <div class="price">
+                <span>$18</span>
+                <button><i class="bi bi-cart-fill"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="f1" data-category="burger" data-aos="fade-up">
+            <div class="box1">
+              <img src="Images/f2.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>Delicious Burger</h5>
+              <p>
+                A flavorful burger made with premium ingredients, juicy patty,
+                 creamy cheese, and fresh toppings.
+              </p>
+              <div class="price">
+                <span>$18</span>
+                <button><i class="bi bi-cart-fill"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="f1" data-category="pizza" data-aos="fade-up">
+            <div class="box1">
+              <img src="Images/f3.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>Delicious Pizza</h5>
+              <p>
+                Freshly baked pizza loaded with rich cheese, flavorful sauce, and premium toppings for taste.
+              </p>
+              <div class="price">
+                <span>$18</span>
+                <button><i class="bi bi-cart-fill"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="f1" data-category="pasta" data-aos="fade-up">
+            <div class="box1">
+              <img src="Images/f4.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>Delicious Pasta</h5>
+              <p>
+                A flavorful pasta made with premium ingredients, juicy patty,
+                 creamy cheese, and fresh toppings.
+              </p>
+              <div class="price">
+                <span>$18</span>
+                <button><i class="bi bi-cart-fill"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="f1" data-category="fries" data-aos="fade-up">
+            <div class="box1">
+              <img src="Images/f5.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>Indian Fries</h5>
+              <p>
+                Crunchy fries coated in flavorful Indian spices, delivering a bold and satisfying snack.
+              </p>
+              <div class="price">
+                <span>$18</span>
+                <button><i class="bi bi-cart-fill"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="f1" data-category="pizza" data-aos="fade-up">
+            <div class="box1">
+              <img src="Images/f6.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>Delicious Pizza</h5>
+              <p>
+                Freshly baked pizza loaded with rich cheese, flavorful sauce, and premium toppings for taste.
+              </p>
+              <div class="price">
+                <span>$18</span>
+                <button><i class="bi bi-cart-fill"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="f1" data-category="burger" data-aos="fade-up">
+            <div class="box1">
+              <img src="Images/f7.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>Tasty Burger</h5>
+              <p>
+                Juicy grilled patty, fresh vegetables, melted cheese, and rich sauces packed with flavor.
+              </p>
+              <div class="price">
+                <span>$18</span>
+                <button><i class="bi bi-cart-fill"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="f1" data-category="burger" data-aos="fade-up">
+            <div class="box1">
+              <img src="Images/f8.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>Tasty Burger</h5>
+              <p>
+                Juicy grilled patty, fresh veggies, melted cheese, and rich sauces for irresistible flavor.
+              </p>
+              <div class="price">
+                <span>$18</span>
+                <button><i class="bi bi-cart-fill"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="f1" data-category="pasta" data-aos="fade-up">
+            <div class="box1">
+              <img src="Images/f9.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>Delicious Pasta</h5>
+              <p>
+                A perfectly cooked patty layered with cheese, fresh toppings, and bold flavors.
+              </p>
+              <div class="price">
+                <span>$18</span>
+                <button><i class="bi bi-cart-fill"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-more">
+          <button style="display: block; margin: 0 auto">View More</button>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="Images/about-img.png" alt="" />
+        </div>
+        <div class="about-info" data-aos="fade-left">
+          <h1>We are food</h1>
+          <p>
+            Our customers love the fast delivery, fresh food, and smooth
+            ordering experience. <br />
+            They appreciate the timely updates, friendly service, and consistent
+            quality,<br />
+            Many say the packaging is neat, portions are satisfying, and overall
+            experience feels <br />
+            reliable and enjoyable every time.
+          </p>
+          <button>Read More</button>
+        </div>
+      </section>
+
+      <section class="contact-map" id="booktable">
+        <div class="contact" data-aos="fade-right">
+          <h2>Book A Table</h2>
+          <ul>
+            <li><input type="text" placeholder="Your Name" /></li>
+            <li><input type="number" placeholder="Phone Number" /></li>
+            <li><input type="email" placeholder="Your Email" /></li>
+            <li>
+              <select name="persons" id="persons">
+                <option value="persons">How many persons?</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+              </select>
+            </li>
+            <li><input type="date" placeholder="" /></li>
+          </ul>
+        </div>
+        <div class="contact" data-aos="fade-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d49209.27930613707!2d80.9719290676298!3d26.919770983564387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1765382039166!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="maps"
+          ></iframe>
+        </div>
+      </section>
+      <button class="book-now">Book Now</button>
+
+      <section>
+        <h2 style="text-align: center; padding: 30px">
+          What says our customers
+        </h2>
+        <div class="feedback">
+          <div class="feedback-card" data-aos="fade-right">
+            <div class="feedback-text">
+              <p>
+                Our customers love the fast delivery, fresh food, and smooth
+                ordering experience. They appreciate the timely updates,
+                friendly service, and consistent quality, Many say the packaging
+                is neat, portions are satisfying, and overall experience feels
+                reliable and enjoyable every time.
+              </p>
+              <h5>Aditya Kumar</h5>
+            </div>
+          </div>
+
+          <div class="feedback-card" data-aos="fade-left">
+            <div class="feedback-text">
+              <p>
+                Our customers praise the quick delivery, fresh meals, and easy
+                ordering process. They love the smooth app experience, accurate
+                tracking, neat packaging, and consistent food quality Many say 
+                every order feels reliable, tasty, and worth repeating again.
+              </p>
+              <h5>Aditya Kumar</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="inner-footer">
+          <div class="contact-us">
+            <h6>Contact us</h6>
+            <p>Location</p>
+            <p>aditya@gmail.com</p>
+          </div>
+          <div class="contact-us">
+            <h6>Food</h6>
+            <p>
+              Customers say the food is always fresh, flavorful, and perfectly
+              cooked.
+            </p>
+          </div>
+          <div class="contact-us">
+            <h6>Opening hours</h6>
+            <p>Everyday</p>
+            <p>10:00 AM to 10:00 PM</p>
+          </div>
+        </div>
+        <div class="developer">
+          <hr style="height: 2px; margin: 0; color: white" />
+          <p>All rights researved by Aditya Kumar</p>
+          <p>Designes and developed by Aditya Kumar</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@	2.3.1/dist/aos.js">	</script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
