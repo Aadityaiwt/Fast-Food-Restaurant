@@ -157,6 +157,20 @@ button i {
   font-family: "Dancing Script", cursive;
 }
 
+.our-menu {
+    text-align: center;
+    position: relative;
+}
+
+.our-menu::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: black;
+    margin: 10px auto;
+}
+
 .menu-list li {
   cursor: pointer;
   padding: 10px 24px;
@@ -246,6 +260,16 @@ button i {
   padding: 0 0 0 20px;
 }
 
+.rupees {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ffbe33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .price {
   display: flex;
   align-items: center;
@@ -254,15 +278,15 @@ button i {
 }
 
 .price span {
-  color: #ffbe33;
+  color: #fff;
   margin: 0;
 }
 
 .price button {
   height: 50px;
-  width: 50px;
+  width: 150px;
   background-color: #ffbe33;
-  border-radius: 50%;
+  border-radius: 10px;
   color: white;
 }
 

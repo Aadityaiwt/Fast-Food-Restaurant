@@ -260,9 +260,9 @@ button i {
 
 .price button {
   height: 50px;
-  width: 50px;
+  width: 150px;
   background-color: #ffbe33;
-  border-radius: 50%;
+  border-radius: 10px;
   color: white;
 }
 
