@@ -22,6 +22,25 @@
   font-family: "Dancing Script", cursive;
 }
 
+.collapse ul li a {
+  position: relative;
+}
+
+.collapse ul li a::after {
+    content: "";
+    height: 3px;
+    background-color: #e69c00;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .3s ease-in-out;
+}
+
+.collapse ul li a:hover::after{
+    width: 100%;
+}
+
 .navbar-brand:hover {
   color: #e69c00 !important;
 }
